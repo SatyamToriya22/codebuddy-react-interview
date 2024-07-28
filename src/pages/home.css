@@ -1,0 +1,149 @@
+.home-base {
+  color: white;
+  padding: 10px;
+}
+
+.navbar .navbar-top {
+  min-width: auto;
+  justify-content: center;
+}
+
+.navbar .nav-top-list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-bottom-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.navbar .navbar-top .nav-top-list-items {
+  font-size: 0.8125rem;
+  vertical-align: middle;
+  margin-right: 36px;
+  line-height: 39px;
+}
+.navbar .nav-bottom-list-items {
+  font-size: 0.8125rem;
+  vertical-align: middle;
+  margin-right: 20px;
+  line-height: 39px;
+}
+
+.navbar .navbar-ms-logo {
+  width: 154px;
+  height: 28px;
+  margin-right: 28px;
+}
+.navbar .navbar-copilot-logo {
+  height: 16px;
+  padding-right: 4px;
+}
+
+.search-bar-input {
+  padding: 1rem 5rem 1rem 3.5rem;
+}
+.search-bar-input:focus {
+    outline: none;
+}
+.search-box-conatainer {
+  height: 45vh;
+}
+
+.card {
+  height: 11rem;
+  width: 16rem;
+}
+.arrow {
+  top: 30%;
+}
+
+.footer-carrusel {
+  scroll-behavior: smooth;
+}
+
+.footer-carrusel .carrousel-image {
+  height: 8rem;
+  width: 100%;
+}
+.arrow-btn {
+  height: 2rem;
+  width: 3rem;
+}
+
+.footer-carrusel .carrousel-text {
+  background-color: rgb(34 34 34 / 90%);
+  width: -webkit-fill-available;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menuPopup {
+  z-index: 6;
+  max-height: calc(-100px + 100vh);
+  width: 18rem;
+}
+.menuPopup::-webkit-scrollbar {
+  width: 16px;
+}
+.menuPopup::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+.menuPopup::-webkit-scrollbar-thumb {
+  background: lightgray;
+    border-radius: 0.5rem;
+}
+.menuPopup .menu-list-items-text {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  margin-left: 20px;
+  margin-right: 25px;
+  line-height: 32px;
+}
+.menuPopup .appearence-list-items {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  margin-left: 34px;
+  margin-right: 25px;
+  line-height: 32px;
+}
+
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+}
+.toggle-switch:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  background: white;
+  transition: 0.3s;
+}
+.toggle-switch:checked:before {
+  transform: translateX(20px);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-base {
+    padding: 10px;
+  }
+  .navbar .navbar-top .nav-top-list-items {
+    margin-right: 15px;
+    line-height: 20px;
+  }
+  .navbar .navbar-ms-logo {
+    width: 124px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .arrow-btn {
+    width: 2rem;
+  }
+}
